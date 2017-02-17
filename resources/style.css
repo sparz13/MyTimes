@@ -1,3 +1,13 @@
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+/* Header */
+
 .header {
   display: flex;
   border-bottom: 1px solid black;
@@ -7,6 +17,11 @@
   padding-bottom: 10px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+  padding-top: 10px;
 }
 
 .logo {
@@ -17,6 +32,8 @@
 .header img {
   margin-left: 30px;
 }
+
+/* Nav */
 
 nav {
   margin-right: 20px;
@@ -33,4 +50,107 @@ nav span {
 
 a {
   color: black;
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: 30px;
+  position: relative;
+  top: 80px;
+}
+
+/* Large Column */
+
+.column.large {
+  display: flex;
+  width: 630px;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* Paragraph for stories */
+
+p.para{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/* Pictures + Header (In order) */
+
+.lead .image-content {
+  display: flex;
+  background-image:url(../resources/images/main_story.png);
+  height: 300px;
+}
+
+.lead .image-content span{
+  font-size: 40px;
+}
+
+.image-content span {
+  font-family: Georgia;
+ font-weight: bold;
+ font-size: 30px;
+ color: white;
+}
+
+.story .fall-content {
+  background-image: url(../resources/images/fall.png);
+  height: 300px;
+  text-align: center;
+}
+
+.story .hip-content {
+  background-image: url(../resources/images/hipster.png);
+  height: 300px;
+  text-align: center;
+}
+
+.story .cat {
+  background-image: url(../resources/images/cat.png);
+  height: 300px;
+  text-align: center;
+}
+
+
+/* Medium Column */
+
+.column.medium {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* Small Column */
+
+.column.small {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* Stories */
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories .text-content {
+  height: 250px;
 }
